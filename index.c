@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int index_load(Index *index) { (void)index; return 0; }
+int index_load(Index *index) { index->count = 0; return 0; }
 int index_save(const Index *index) { (void)index; return 0; }
 int index_add(Index *index, const char *path) { (void)index; (void)path; return 0; }
 int index_remove(Index *index, const char *path) { (void)index; (void)path; return 0; }
