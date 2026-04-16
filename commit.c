@@ -1,6 +1,7 @@
 #include "commit.h"
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 int commit_create(const char *message, ObjectID *commit_id_out) { (void)message; (void)commit_id_out; return 0; }
 int commit_parse(const void *data, size_t len, Commit *commit_out) { (void)data; (void)len; (void)commit_out; return 0; }
